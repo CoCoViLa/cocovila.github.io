@@ -1,1 +1,158 @@
-<!DOCTYPE html><html lang="en"><!--  Head --><head><!-- Head -->  <title>Documentation: CoCoViLa - Compiler Compiler for Visual Languages</title>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="stylesheet" href="bootstrap/bootstrap.css">    <link rel="stylesheet" href="css/customize.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <script src="bootstrap/bootstrap.min.js"></script>    <script src="js/load.js"></script> </head> <!--  Head end 3 -->  <!--  Body --><body id="body-documentation"><div id="top-nav"></div>         <!--  Content-->   <div class="container"><!--  Panel 1 -->	<div class="jumbotron">    			<h1>CoCoViLa at a glance</h1>				<p class="lead">CoCoViLa is a software tool for model-based software development with a visual language 				support that performs automatic synthesis of programs from logical specifications. It is tightly 				integrated with Java: it is written in Java, uses advanced features of Java, and it supports 				programming of new software components in Java almost without restrictions.</p>				<ul class="lead">					<li>CoCoViLa presentation @ <a href="http://www.devclub.eu/2012/04/30/april-followup/" class="colored">devclub.eu</a>(25.04.2012 Check out the <a href="http://www.slideshare.net/pgrigorenko/cocovila-devclubeu" class="colored">slides</a> (in English) and the <a href="http://vimeo.com/41040729" class="colored">video</a> with hands-on demo (in Russian)</li>				</ul> 				<a href="files/documentation/01_general.pdf" title="CoCoViLa at a glance" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> CoCoViLa at a glance</a>  	</div> <!--  Panel 1 end-->   <!--  Panel 2 --> <div class="panel panel-default">  <div class="panel-body">  	<div class="row"> 	<div class="col-md-4">      	<img src="img/scr_ce_.png" class=" img-responsive" alt="Class Editor">  	</div>  	<div class="col-md-8">  		<h1> Class Editor</h1>  		<p class="lead"> Class Editor is used for creating visual languages for different problem domains. A CoCoViLa package consists of a package description in XML format (e.g., <code>mypackage.xml</code>), bitmaps for all visual classes of the package (to be shown on the tool bar in the Scheme Editor), and Java classes associated with the visual classes.</p>   	<a href="files/documentation/02_classeditor.pdf" title="Class Editor" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Class Editor manual</a> 	</div> </div> </div> </div> <!--  Panel 2 end -->  <!--  Panel 3 --> <div class="panel panel-default">  <div class="panel-body">   <div class="row">  		<div class="col-md-8">  		<h1> Scheme Editor</h1>  		<p class="lead"> The Scheme Editor is used as a visual environment for specifying models by drawing schemes and solving problems on the models. To solve a problem, first a package must be loaded and, thereafter a scheme that specifies a model has to be built or opened from a package folder.</p>   	<a href="files/documentation/04_schemeeditor.pdf" title="Scheme Editor" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Scheme Editor manual</a> 		</div>   		<div class="col-md-4">      	<img src="img/scr_se_.png" class=" img-responsive" alt="Class Editor">  		</div> </div></div></div><!--  Panel 3 end --><!--  Panel 4 --> <div class="panel panel-default">  <div class="panel-body">  		<h1>Specification language</h1>  		<p class="lead">All software components developed in CoCoViLa are in essence Java classes, but they have extensions. In CoCoViLa, 		in order to describe the behavior of a component, one has to annotate component's Java class with a metainterface. Java 		class supplied with a metainterface is called a metaclass. Metainterface is a textual specification of a model of a 		component. It contains information about computability of variables occuring in the model. For defining a 		metainterface of a component, the specification language is used.</p>		<ul class="lead">			<li>I. Nafigin. <a href="files/documentation/NafiginMsc.pdf">Implementing parser for CoCoViLa specification			language using context-free grammar</a>. (MSc thesis, 2014) </li>		</ul>     <a href="files/documentation/03_speclang.pdf" title="Specification language" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Specification language description</a>  </div></div>  <!--  Panel 4 end -->  <!--  Panel 5 --> <div class="panel panel-default">  <div class="panel-body">    		<h1>Expert System Shell</h1>  		<p class="lead"> A lightweight and modular expert system shell for the usage in decision support system. Expert System Shell is developed to enhance decision support applications in CoCoViLa.</p>     		<ul class="lead">        		<li > <a href="files/documentation/13_10_28_29_pavel_2.pdf" title="Expert Tables in CoCoViLa" >Pavel Grigorenko: Expert decision tables in CoCoViLa</a> (MBJSDT seminar 	29.10.2013)</li>    	</ul>     		<a href="files/documentation/ExpSys_UserDoc_1.7.pdf" title="decision table manual" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Expert System Shell manual</a>  </div>  </div>  <!--  Panel 5 end -->  <!--  Panel 6 --> <div class="panel panel-default">  <div class="panel-body">  		<h1>Articles</h1>		<p class="lead">Parts of the CoCoViLa system have been described in the following papers.</p>		<ul class="lead">			<li>Geert Alberghs, Pavel Grigorenko, Jyri Kivimaa. Quantitative system reliability approach for optimizing IT security costs in an AI environment. In J. Penjam, ed., Proc. of 12th Symp. on Programming Languages and Software Tools, SPLST 2011 (Tallinn, Oct. 2011), pp. 219-230. Inst. of Cybern., 2011.</li>			<li>Vahur Kotkas, Andres Ojamaa, Pavel Grigorenko, Riina Maigre, Mait Harf, Enn Tyugu. CoCoViLa as a multifunctional simulation platform. In: SIMUTOOLS 2011 - 4th International ICST Conference on Simulation Tools and Techniques : March 21-25 - Barcelona, Spain: Brussels: ICST, 1 - 8, 2011.</li>			<li>A. Ojamaa, E. Tyugu. Rich Components of Extendable Simulation Platform. In: Proceedings of the 2007 International Conference on Modeling, Simulation &amp; Visualization Methods, MSV 2007: June 25-28 2007, Las Vegas Nevada, USA: (Ed.) Arabnia, Hamid R. Las Vegas: CSREA Press, 2007, 121-127.</li>			<li>P. Grigorenko, E. Tyugu. Deep Semantics of Visual Languages. In: E. Tyugu, T. Yamaguchi (eds.) Knowledge-Based Software Engineering. Frontiers in Artificial Intelligence and Applications, vol. 140. IOS Press, p. 83 - 95.</li>			<li>P. Grigorenko, A. Saabas, E. Tyugu. Visual Tool for Generative Programming. Proc. of the ACM SIGSOFT Symposium on the Foundations of Software Engineering, ACM Press, 2005.</li>			<li>P. Grigorenko, A. Saabas, E. Tyugu. COCOVILA - Compiler-Compiler for Visual Languages. Proc. of the 5th Workshop on Language Descriptions, Tools and Applications, 2005 (Edinburgh, April 2005), v. 141, n. 4 of Electron. Notes in Theor. Comput. Sci., pp. 137-142. Elsevier, 2005.</li>		</ul></div></div><!--  Panel 6 end --><!--  Panel 7 --><div class="jumbotron">    <h1>Interested in doing your own Master's or PhD project with CoCoViLa?</h1>  	<p class="lead">Possible topics include applications of methods of artificial intelligence, visual specification languages, automatic synthesis of programs, model-based software engineering, modeling and simulation, web services etc. See the <a href="http://www.cs.ioc.ee/msg" title="Modeling and Simulation Group at IoC" class="colored">Modeling and Simulation Group</a>'s web page for potential supervisors and <a href="http://www.cs.ioc.ee/msg/topics.html" title="Topics for Master's and PhD projects @ IoC" class="colored">suggested topics for Master's or PhD projects</a>, or come up with your own topic!</p>  </div> <!--  Panel 7 end -->   <!--  Panel 8 --> <div class="panel panel-default">  <div class="panel-body">  		<h1>Theses</h1>		<p class="lead">The following is a list of theses on CoCoViLa-related topics that have been successfully defended.</p>		<ul class="lead">			<li>I. Nafigin. <a href="files/documentation/NafiginMsc.pdf">Implementing parser for CoCoViLa specification			language using context-free grammar</a>. (MSc thesis, 2014) </li>			<li>R. Maigre. <a href="http://digi.lib.ttu.ee/i/?607" title="Composition of Web Services on Large Service Models" >Composition of Web Services on Large Service Models</a>. (PhD thesis, 2011)</li>			<li>P. Grigorenko. <a href="http://digi.lib.ttu.ee/i/?510" title="Higher-order attribute semantics of flat languages" >Higher-order attribute semantics of flat languages</a>.   			(PhD thesis, 2010)</li>			<li>M. Viil. Program package for designing gear drive in CoCoViLa software system. (MSc thesis, 2008)</li>			<li>T. Matsalu. Program package for designing chain conveyor in CoCoViLa software system. (MSc thesis, 2007)</li>			<li>A. Ojamaa. Modular simulation platform. (MSc thesis, 2007)</li>			<li>R. Maigre. Web services composition software with visual user interface. (MSc thesis, 2007)</li>			<li>P. Grigorenko. <a href="files/documentation/pg_msc.pdf" title="Attribute Semantics of Visual Languages">Attribute Semantics of Visual Languages</a>. (MSc thesis, 2006)</li>			<li>U. Lipso. Rihmülekannete projekteerimispakett tarkvarasüsteemi VSLE testimiseks. (MSc thesis, 2004)</li>			<li>A. Aasmaa. A framework for design and implementation of visual languages. (Dipl. thesis, 2004)</li>			<li>P. Grigorenko. <a href="files/documentation/pg_bsc.pdf" title="Program Synthesis in Java Environment">Program Synthesis in Java Environment</a>. (BSc thesis, 2004)</li>			<li>A. Saabas. <a href="files/documentation/saabas_thesis.pdf" title="A Framework for Design and Implementation of Visual Languages">A Framework for Design and Implementation of Visual Languages</a>. (MSc thesis, 2004)</li>		</ul></div></div><!--  Panel 8 end -->  </div>    <!--  Content end --><div id="footer"></div></body>    <!--  Body end --></html>
+<!DOCTYPE html>
+<html lang="en">
+<!--  Head -->
+<head><!-- Head -->
+  <title>Documentation: CoCoViLa - Compiler Compiler for Visual Languages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/customize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/load.js"></script>
+ </head>
+ <!--  Head end 3 --> 
+ 
+<!--  Body -->
+<body id="body-documentation">
+<div id="top-nav"></div>
+    
+     <!--  Content-->   
+<div class="container">
+<!--  Panel 1 -->
+	<div class="jumbotron">
+    			<h1>CoCoViLa at a glance</h1>
+				<p class="lead">CoCoViLa is a software tool for model-based software development with a visual language 
+				support that performs automatic synthesis of programs from logical specifications. It is tightly 
+				integrated with Java: it is written in Java, uses advanced features of Java, and it supports 
+				programming of new software components in Java almost without restrictions.</p>
+				<ul class="lead">
+					<li>CoCoViLa presentation @ <a href="http://www.devclub.eu/2012/04/30/april-followup/" class="colored">devclub.eu</a>(25.04.2012 Check out the <a href="http://www.slideshare.net/pgrigorenko/cocovila-devclubeu" class="colored">slides</a> (in English) and the <a href="http://vimeo.com/41040729" class="colored">video</a> with hands-on demo (in Russian)</li>
+				</ul>
+ 				<a href="files/documentation/01_general.pdf" title="CoCoViLa at a glance" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> CoCoViLa at a glance</a>
+  	</div>
+ <!--  Panel 1 end-->
+ 
+  <!--  Panel 2 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+  	<div class="row">
+ 	<div class="col-md-4">
+      	<img src="img/scr_ce_.png" class=" img-responsive" alt="Class Editor"> 
+ 	</div>
+  	<div class="col-md-8">
+  		<h1> Class Editor</h1>
+  		<p class="lead"> Class Editor is used for creating visual languages for different problem domains. A CoCoViLa package consists of a package description in XML format (e.g., <code>mypackage.xml</code>), bitmaps for all visual classes of the package (to be shown on the tool bar in the Scheme Editor), and Java classes associated with the visual classes.</p>
+   	<a href="files/documentation/02_classeditor.pdf" title="Class Editor" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Class Editor manual</a>
+ 	</div>
+ </div>
+ </div>
+ </div>
+ <!--  Panel 2 end -->
+ 
+ <!--  Panel 3 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+   <div class="row">
+  		<div class="col-md-8">
+  		<h1> Scheme Editor</h1>
+  		<p class="lead"> The Scheme Editor is used as a visual environment for specifying models by drawing schemes and solving problems on the models. To solve a problem, first a package must be loaded and, thereafter a scheme that specifies a model has to be built or opened from a package folder.</p>
+   	<a href="files/documentation/04_schemeeditor.pdf" title="Scheme Editor" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Scheme Editor manual</a>
+ 		</div>
+ 
+  		<div class="col-md-4">
+      	<img src="img/scr_se_.png" class=" img-responsive" alt="Class Editor"> 
+ 		</div>
+ </div>
+</div>
+</div>
+<!--  Panel 3 end -->
+
+<!--  Panel 4 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+  		<h1>Specification language</h1>
+  		<p class="lead">All software components developed in CoCoViLa are in essence Java classes, but they have extensions. In CoCoViLa, 
+		in order to describe the behavior of a component, one has to annotate component's Java class with a metainterface. Java 
+		class supplied with a metainterface is called a metaclass. Metainterface is a textual specification of a model of a 
+		component. It contains information about computability of variables occuring in the model. For defining a 
+		metainterface of a component, the specification language is used.</p>
+
+		<ul class="lead">
+			<li>I. Nafigin. <a href="files/documentation/NafiginMsc.pdf">Implementing parser for CoCoViLa specification
+			language using context-free grammar</a>. (MSc thesis, 2014) </li>
+		</ul>
+     <a href="files/documentation/03_speclang.pdf" title="Specification language" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Specification language description</a>
+  </div>
+</div>
+  <!--  Panel 4 end -->
+
+  <!--  Panel 5 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+    		<h1>Expert System Shell</h1>
+  		<p class="lead"> A lightweight and modular expert system shell for the usage in decision support system. Expert System Shell is developed to enhance decision support applications in CoCoViLa.</p>
+   
+  		<ul class="lead">
+        		<li > <a href="files/documentation/13_10_28_29_pavel_2.pdf" title="Expert Tables in CoCoViLa" >Pavel Grigorenko: Expert decision tables in CoCoViLa</a> (MBJSDT seminar 	29.10.2013)</li>
+    	</ul>
+    
+ 		<a href="files/documentation/ExpSys_UserDoc_1.7.pdf" title="decision table manual" class="btn btn-success btn-lg"> <span class="glyphicon glyphicon-download"></span> Expert System Shell manual</a>
+  </div>
+  </div>
+  <!--  Panel 5 end -->
+  <!--  Panel 6 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+  		<h1>Articles</h1>
+		<p class="lead">Parts of the CoCoViLa system have been described in the following papers.</p>
+		<ul class="lead">
+			<li>Geert Alberghs, Pavel Grigorenko, Jyri Kivimaa. Quantitative system reliability approach for optimizing IT security costs in an AI environment. In J. Penjam, ed., Proc. of 12th Symp. on Programming Languages and Software Tools, SPLST 2011 (Tallinn, Oct. 2011), pp. 219-230. Inst. of Cybern., 2011.</li>
+			<li>Vahur Kotkas, Andres Ojamaa, Pavel Grigorenko, Riina Maigre, Mait Harf, Enn Tyugu. CoCoViLa as a multifunctional simulation platform. In: SIMUTOOLS 2011 - 4th International ICST Conference on Simulation Tools and Techniques : March 21-25 - Barcelona, Spain: Brussels: ICST, 1 - 8, 2011.</li>
+			<li>A. Ojamaa, E. Tyugu. Rich Components of Extendable Simulation Platform. In: Proceedings of the 2007 International Conference on Modeling, Simulation &amp; Visualization Methods, MSV 2007: June 25-28 2007, Las Vegas Nevada, USA: (Ed.) Arabnia, Hamid R. Las Vegas: CSREA Press, 2007, 121-127.</li>
+			<li>P. Grigorenko, E. Tyugu. Deep Semantics of Visual Languages. In: E. Tyugu, T. Yamaguchi (eds.) Knowledge-Based Software Engineering. Frontiers in Artificial Intelligence and Applications, vol. 140. IOS Press, p. 83 - 95.</li>
+			<li>P. Grigorenko, A. Saabas, E. Tyugu. Visual Tool for Generative Programming. Proc. of the ACM SIGSOFT Symposium on the Foundations of Software Engineering, ACM Press, 2005.</li>
+			<li>P. Grigorenko, A. Saabas, E. Tyugu. COCOVILA - Compiler-Compiler for Visual Languages. Proc. of the 5th Workshop on Language Descriptions, Tools and Applications, 2005 (Edinburgh, April 2005), v. 141, n. 4 of Electron. Notes in Theor. Comput. Sci., pp. 137-142. Elsevier, 2005.</li>
+		</ul>
+</div>
+</div>
+<!--  Panel 6 end -->
+<!--  Panel 7 -->
+<div class="jumbotron">
+    <h1>Interested in doing your own Master's or PhD project with CoCoViLa?</h1>
+  	<p class="lead">Possible topics include applications of methods of artificial intelligence, visual specification languages, automatic synthesis of programs, model-based software engineering, modeling and simulation, web services etc. See the <a href="http://www.cs.ioc.ee/msg" title="Modeling and Simulation Group at IoC" class="colored">Modeling and Simulation Group</a>'s web page for potential supervisors and <a href="http://www.cs.ioc.ee/msg/topics.html" title="Topics for Master's and PhD projects @ IoC" class="colored">suggested topics for Master's or PhD projects</a>, or come up with your own topic!</p>
+  </div>
+ <!--  Panel 7 end --> 
+  
+<!--  Panel 8 -->
+ <div class="panel panel-default">
+  <div class="panel-body">
+  		<h1>Theses</h1>
+		<p class="lead">The following is a list of theses on CoCoViLa-related topics that have been successfully defended.</p>
+		<ul class="lead">
+			<li>I. Nafigin. <a href="files/documentation/NafiginMsc.pdf">Implementing parser for CoCoViLa specification
+			language using context-free grammar</a>. (MSc thesis, 2014) </li>
+			<li>R. Maigre. <a href="http://digi.lib.ttu.ee/i/?607" title="Composition of Web Services on Large Service Models" >Composition of Web Services on Large Service Models</a>. (PhD thesis, 2011)</li>
+			<li>P. Grigorenko. <a href="http://digi.lib.ttu.ee/i/?510" title="Higher-order attribute semantics of flat languages" >Higher-order attribute semantics of flat languages</a>. 
+  			(PhD thesis, 2010)</li>
+			<li>M. Viil. Program package for designing gear drive in CoCoViLa software system. (MSc thesis, 2008)</li>
+			<li>T. Matsalu. Program package for designing chain conveyor in CoCoViLa software system. (MSc thesis, 2007)</li>
+			<li>A. Ojamaa. Modular simulation platform. (MSc thesis, 2007)</li>
+			<li>R. Maigre. Web services composition software with visual user interface. (MSc thesis, 2007)</li>
+			<li>P. Grigorenko. <a href="files/documentation/pg_msc.pdf" title="Attribute Semantics of Visual Languages">Attribute Semantics of Visual Languages</a>. (MSc thesis, 2006)</li>
+			<li>U. Lipso. Rihmülekannete projekteerimispakett tarkvarasüsteemi VSLE testimiseks. (MSc thesis, 2004)</li>
+			<li>A. Aasmaa. A framework for design and implementation of visual languages. (Dipl. thesis, 2004)</li>
+			<li>P. Grigorenko. <a href="files/documentation/pg_bsc.pdf" title="Program Synthesis in Java Environment">Program Synthesis in Java Environment</a>. (BSc thesis, 2004)</li>
+			<li>A. Saabas. <a href="files/documentation/saabas_thesis.pdf" title="A Framework for Design and Implementation of Visual Languages">A Framework for Design and Implementation of Visual Languages</a>. (MSc thesis, 2004)</li>
+		</ul>
+</div>
+</div>
+<!--  Panel 8 end -->
+  
+</div>
+    <!--  Content end -->
+
+<div id="footer"></div>
+</body>
+    <!--  Body end -->
+</html>

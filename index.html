@@ -1,1 +1,103 @@
-<!DOCTYPE html><html lang="en"><head><!-- Head -->  <title>About: CoCoViLa - Compiler Compiler for Visual Languages</title>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="stylesheet" href="bootstrap/bootstrap.css">    <link rel="stylesheet" href="css/customize.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <script src="bootstrap/bootstrap.min.js"></script>  <script src="js/load.js"></script> </head> <!-- Head end --> <!--  Body --><body id="body-about"><div id="top-nav"></div><!-- main content   --><div class="container"><!-- Jumbotron 1 -->  <div class="jumbotron">			<h1>CoCoViLa is a model-based software development platform </h1>      			<p>The platform provides a framework for developing visual specification languages. It includes a visual editor for drawing schemes and a synthesizer for generating Java programs from visual schemes and declarative textual specifications.</p>  			<a href="http://sourceforge.net/projects/cocovila/files/CoCoViLa/" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-download"></span> Download</a>    			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#webStartModal"><span class="glyphicon glyphicon-play-circle"></span> WebStart</button>  </div>  <!-- Jumbotron 1 end-->  <!--  Description 1--> <div class="row"> 		<div class="col-md-12">			<h1>Getting started</h1>			<p class="lead"> Simple tutorials of using CoCoViLa applications &mdash; Class Editor and Scheme Editor &mdash; can be found in the			<a href="documentation.html" title="CoCoViLa documentation">Documentation</a> section. The <code>packages</code> directory included in CoCoViLa distributions contains several sample packages (files with <code>xml</code> extension), together with example schemes			(<code>syn</code> extensions).</p>			<p class="lead"> About the package format and specification language descriptions, see 			the <a href="documentation.html">Documentation</a> section. </p> 			<hr class="featurette-divider"> 		</div>  </div> <!--  Description 1 end-->   <!--  Description 2-->  <div class="row">    <div class="col-md-5">    	<h1>Class Editor</h1>		<p class="lead"> Class Editor is used for creating visual languages for different problem domains. A CoCoViLa package consists of a package description in XML format (e.g., mypackage.xml), bitmaps for all visual classes of the package (to be shown on the tool bar in the Scheme Editor), and Java classes associated with the visual classes.</p>     <img src="img/scr_ce_.png" class=" img-responsive" alt="Class Editor">     </div>    <div class="col-md-2">     <p></p>    </div>    <div class="col-md-5">    	<h1>Scheme Editor</h1>		<p class="lead"> The Scheme Editor is used as a visual environment for specifying models by drawing schemes and solving problems on the models. To solve a problem, first a package must be loaded and, thereafter a scheme that specifies a model has to be built or opened from a package folder. </p>       <img src="img/scr_se_.png" class="img-responsive"  alt="Scheme Editor">      </div>    <div class="clearfix visible-lg"></div>  </div>  <!--  Description 2 end-->    <!-- Jumbotron 2-->  <div class="jumbotron">		<h1>CoCoViLa highlights</h1>		<ul class="list-group">			<li class="list-group-item list-font"> <span class="glyphicon green glyphicon-ok"></span> Rapid development of Domain-Specific Visual Languages</li>			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Simple declarative specification language on top of Java classes</li>			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Fully automatic program synthesis out of the box (no need to implement language-specific code generators)</li>			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Compilation and execution of generated programs within the framework with instant visual feedback</li>    		</ul> 	</div>      <!-- Jumbotron 2 end--> <!--  Description 3 -->	<div class="row"> 		<div class="col-md-12">			<h1>Contacts</h1> 			<p class="lead"> If you are interested in using CoCoViLa platform for your own applications, would like to have a support contract, have any questions about CoCoViLa or want to join the project, please send your e-mail to cocovila&nbsp;at&nbsp;cs.ioc.ee. You can also contact members of the <a href="http://www.cs.ioc.ee/msg/" title="Modeling and Simulation Group at IoC">Modeling and Simulation Group</a>.</p> 		</div>  	</div>   <!--  Description 3 end-->	  	    <!--  Jumbotron 3 -->  <div class="jumbotron">    	<h1>Interested in doing your own Master's or PhD project with CoCoViLa?</h1>  		<p class="lead">Possible topics include applications of methods of artificial intelligence, visual specification languages, automatic synthesis of programs, model-based software engineering, modeling and simulation, web services etc. See the <a href="http://www.cs.ioc.ee/msg/" title="Modeling and Simulation Group at IoC" class="colored">Modeling and Simulation Group</a>'s web page for potential supervisors and <a href="http://www.cs.ioc.ee/msg/topics.html" title="Topics for Master's and PhD projects @ IoC" class="colored">suggested topics for Master's or PhD projects</a>, or come up with your own topic!</p>  </div>  <!--  Jumbotron 3 end--></div><!--  Container end -->        <div id="footer"></div></body><!--  Body end--></html>
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Head -->
+  <title>About: CoCoViLa - Compiler Compiler for Visual Languages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/customize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="js/load.js"></script>
+ </head>
+ <!-- Head end -->
+
+ <!--  Body -->
+<body id="body-about">
+
+<div id="top-nav"></div>
+
+<!-- main content   -->
+<div class="container">
+
+<!-- Jumbotron 1 -->
+  <div class="jumbotron">
+			<h1>CoCoViLa is a model-based software development platform </h1>      
+			<p>The platform provides a framework for developing visual specification languages. It includes a visual editor for drawing schemes and a synthesizer for generating Java programs from visual schemes and declarative textual specifications.</p>  
+			<a href="http://sourceforge.net/projects/cocovila/files/CoCoViLa/" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-download"></span> Download</a>    
+			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#webStartModal"><span class="glyphicon glyphicon-play-circle"></span> WebStart</button>
+  </div>
+  <!-- Jumbotron 1 end-->
+  
+<!--  Description 1-->
+ <div class="row">
+ 		<div class="col-md-12">
+			<h1>Getting started</h1>
+
+			<p class="lead"> Simple tutorials of using CoCoViLa applications &mdash; Class Editor and Scheme Editor &mdash; can be found in the
+			<a href="documentation.html" title="CoCoViLa documentation">Documentation</a> section. The <code>packages</code> directory included in CoCoViLa distributions contains several sample packages (files with <code>xml</code> extension), together with example schemes
+			(<code>syn</code> extensions).</p>
+
+			<p class="lead"> About the package format and specification language descriptions, see 
+			the <a href="documentation.html">Documentation</a> section. </p>
+
+ 			<hr class="featurette-divider">
+ 		</div>
+  </div>
+ <!--  Description 1 end-->
+ 
+  <!--  Description 2-->
+  <div class="row">
+    <div class="col-md-5">
+    	<h1>Class Editor</h1>
+		<p class="lead"> Class Editor is used for creating visual languages for different problem domains. A CoCoViLa package consists of a package description in XML format (e.g., mypackage.xml), bitmaps for all visual classes of the package (to be shown on the tool bar in the Scheme Editor), and Java classes associated with the visual classes.</p>
+     <img src="img/scr_ce_.png" class=" img-responsive" alt="Class Editor"> 
+    </div>
+    <div class="col-md-2"> 
+    <p></p>
+    </div>
+    <div class="col-md-5"> 
+   	<h1>Scheme Editor</h1>
+		<p class="lead"> The Scheme Editor is used as a visual environment for specifying models by drawing schemes and solving problems on the models. To solve a problem, first a package must be loaded and, thereafter a scheme that specifies a model has to be built or opened from a package folder. </p>
+       <img src="img/scr_se_.png" class="img-responsive"  alt="Scheme Editor">  
+    </div>
+    <div class="clearfix visible-lg"></div>
+  </div>
+  <!--  Description 2 end-->
+
+    <!-- Jumbotron 2-->
+  <div class="jumbotron">
+		<h1>CoCoViLa highlights</h1>
+		<ul class="list-group">
+			<li class="list-group-item list-font"> <span class="glyphicon green glyphicon-ok"></span> Rapid development of Domain-Specific Visual Languages</li>
+			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Simple declarative specification language on top of Java classes</li>
+			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Fully automatic program synthesis out of the box (no need to implement language-specific code generators)</li>
+			<li class="list-group-item list-font"> <span class="glyphicon green  glyphicon-ok"></span> Compilation and execution of generated programs within the framework with instant visual feedback</li>
+    		</ul>
+ 	</div>  
+    <!-- Jumbotron 2 end-->
+
+ <!--  Description 3 -->
+	<div class="row">
+ 		<div class="col-md-12">
+			<h1>Contacts</h1>
+ 			<p class="lead"> If you are interested in using CoCoViLa platform for your own applications, would like to have a support contract, have any questions about CoCoViLa or want to join the project, please send your e-mail to cocovila&nbsp;at&nbsp;cs.ioc.ee. You can also contact members of the <a href="http://www.cs.ioc.ee/msg/" title="Modeling and Simulation Group at IoC">Modeling and Simulation Group</a>.</p>
+ 		</div>
+  	</div>
+   <!--  Description 3 end-->	
+  	
+    <!--  Jumbotron 3 -->
+  <div class="jumbotron">
+    	<h1>Interested in doing your own Master's or PhD project with CoCoViLa?</h1>
+  		<p class="lead">Possible topics include applications of methods of artificial intelligence, visual specification languages, automatic synthesis of programs, model-based software engineering, modeling and simulation, web services etc. See the <a href="http://www.cs.ioc.ee/msg/" title="Modeling and Simulation Group at IoC" class="colored">Modeling and Simulation Group</a>'s web page for potential supervisors and <a href="http://www.cs.ioc.ee/msg/topics.html" title="Topics for Master's and PhD projects @ IoC" class="colored">suggested topics for Master's or PhD projects</a>, or come up with your own topic!</p>
+  </div>
+  <!--  Jumbotron 3 end-->
+</div>
+<!--  Container end -->
+    
+    
+<div id="footer"></div>
+</body>
+<!--  Body end-->
+
+</html>
