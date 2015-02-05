@@ -1,3 +1,5 @@
-<h1>cocovila.github.io</h1>
-<p>Ofiicial CoCoViLa page.</p>
-<p>Bootstap+customization</p>
+#cocovila.github.io
+
+[Official CoCoViLa page](http://cocovila.github.io)
+
+[Bootstap.js](http://getbootstrap.com/)+customization
