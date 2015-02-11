@@ -25,6 +25,39 @@
 </div>
 <!-- Modal end-->
 
+<!-- Modal2-->
+<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">CoCoViLa installation Guide</h4>
+      </div>
+      <div class="modal-body">
+      	<p class="lead">
+    			To install CoCoViLa: 
+        </p>
+        <ul class="lead">
+          <li>Download .zip file. For example, latest release <a href="https://github.com/CoCoViLa/CoCoViLa/releases/download/0.9.8.12/cocovila-0.9.8.12.zip"> cocovila-0.9.8.12.zip</a></li>
+          <li>Unzip it. You will get folder <code>cocovila-0.9.8.12</code></li>
+            <li>Folder contains two runnables:
+                <ul>
+                    <li><code>cocovila-0.9.8.12.jar</code> - for Scheme Editor</li>
+                     <li><code>cocovila-ce-0.9.8.12.jar</code> - for Class Editor</li>
+                </ul>
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                              <a href="https://github.com/CoCoViLa/CoCoViLa/releases" class="btn btn-success"><span class="glyphicon glyphicon-play-circle"></span> Get other releases</a>
+                    <a href="https://github.com/CoCoViLa/CoCoViLa/releases/download/0.9.8.12/cocovila-0.9.8.12.zip" class="btn btn-success"><span class="glyphicon glyphicon-download"></span> Get latest (0.9.8.12) release</a>
+        <!-- <a href="http://www.cs.ioc.ee/cocovila/webstart/CoCoViLa.jnlp" type="button" class="btn btn-success">Start</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal2 end-->
+
 <!-- Navigation -->
  <nav class="navbar navbar-default navbar-fixed-top"> 
   <div class="container">
@@ -56,7 +89,7 @@
       </ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li id="menu-developers"><a href="http://cocovila.github.io/developers.html">Development</a></li>
-			<li><a href="https://github.com/CoCoViLa/CoCoViLa/releases" ><span class="glyphicon glyphicon-download"></span> Get CoCoViLa</a></li>   
+			<!--<li><a href="https://github.com/CoCoViLa/CoCoViLa/releases" ><span class="glyphicon glyphicon-download"></span> Get CoCoViLa</a></li>-->   			<li><a href="#"  data-toggle="modal" data-target="#downloadModal"><span class="glyphicon glyphicon-download"></span> Get CoCoViLa</a></li>
 			<li><a href="#"  data-toggle="modal" data-target="#webStartModal"><span class="glyphicon glyphicon-play-circle"></span> WebStart</a></li>
       </ul>
     </div>
