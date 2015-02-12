@@ -9,7 +9,29 @@ body{
 	visibility: hidden;
 }
 
-	
+.upButton{
+    font-family: 'Glyphicons Halflings'; 
+	width: 60px;
+	height: 60px;
+    color:black;
+	display: block;
+	position:fixed;
+	left:10px;
+	bottom: 20px;
+	cursor: pointer;
+	z-index: 999;
+    opacity:0.5;
+    text-align: center;
+    font-size: 4.5em;
+
+}	
+
+.upButton:before{
+
+content:"\e133";
+
+}
+
 	.navbar-nav {
 		font-size:1.3em;
 	}
