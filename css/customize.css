@@ -16,11 +16,11 @@ body{
     color:black;
 	display: block;
 	position:fixed;
-	left:10px;
+	right:10px;
 	bottom: 20px;
 	cursor: pointer;
 	z-index: 999;
-    opacity:0.5;
+    opacity:0.35;
     text-align: center;
     font-size: 4.5em;
 
@@ -28,8 +28,8 @@ body{
 
 .upButton:before{
 
-content:"\e133";
-
+/*content:"\e133";*/
+content:"\e113";
 }
 
 	.navbar-nav {
