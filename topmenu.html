@@ -27,7 +27,23 @@
 <!-- Modal end-->
 
 <!-- Modal2-->
+<script language="javascript" type="text/javascript">  
+    $(document).ready(function () {
+        GetLatestReleaseInfo();  
+    });  
 
+
+function GetLatestReleaseInfo() {
+      $.getJSON("https://api.github.com/repos/CoCoViLa/CoCoViLa/tags").done(function (json) {
+
+         var release = json[0];
+	 var name=release.name;
+          var downloadURL="https://github.com/CoCoViLa/CoCoViLa/releases/download/"+release.name+"/cocovila-"+release.name+".zip";
+                   $(".releaselink").attr("href", downloadURL);  
+	 $(".release").append(name);  
+      });    
+    }  
+</script>
 <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
   <div class="modal-dialog">
     <div class="modal-content">
@@ -40,19 +56,19 @@
     			To install CoCoViLa: 
         </p>
         <ul class="lead">
-          <li>Download .zip file. For example, latest release <a href="https://github.com/CoCoViLa/CoCoViLa/releases/download/0.9.8.12/cocovila-0.9.8.12.zip"> cocovila-0.9.8.12.zip</a></li>
-          <li>Unzip it. You will get folder <code>cocovila-0.9.8.12</code></li>
+            <li>Download .zip file. For example, latest release <a href="" class="releaselink"> cocovila-<span class="release"></span>.zip</a></li>
+            <li>Unzip it. You will get folder <code>cocovila-<span class="release"></span></code></li>
             <li>Folder contains two runnables:
                 <ul>
-                    <li><code>cocovila-0.9.8.12.jar</code> - for Scheme Editor</li>
-                     <li><code>cocovila-ce-0.9.8.12.jar</code> - for Class Editor</li>
+                    <li><code>cocovila-<span class="release"></span>.jar</code> - for Scheme Editor</li>
+                    <li><code>cocovila-ce-<span class="release"></span>.jar</code> - for Class Editor</li>
                 </ul>
           </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                               <a href="https://github.com/CoCoViLa/CoCoViLa/releases" class="btn btn-success"><span class="glyphicon glyphicon-play-circle"></span> Get other releases</a>
-                    <a href="https://github.com/CoCoViLa/CoCoViLa/releases/download/0.9.8.12/cocovila-0.9.8.12.zip" class="btn btn-success"><span class="glyphicon glyphicon-download"></span> Get latest (0.9.8.12) release</a>
+          <a href="" class="releaselink btn btn-success"><span class="glyphicon glyphicon-download"></span> Get latest (<span class="release"></span>) release</a>
         <!-- <a href="http://www.cs.ioc.ee/cocovila/webstart/CoCoViLa.jnlp" type="button" class="btn btn-success">Start</a> -->
       </div>
     </div>
