@@ -32,6 +32,10 @@ body{
 content:"\e113";
 }
 
+.glyphicon-copy:before {
+ content:"\e065";
+}
+
 	.navbar-nav {
 		font-size:1.3em;
 	}

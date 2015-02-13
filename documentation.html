@@ -10,11 +10,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/load.js"></script>
+    
+<script src="js/ZeroClipboard.js"></script>
+<script>
+////copy to clip
+var clip = null;
+
+clip.addEventListener( 'onComplete', my_complete );
+
+function init() {
+	clip = new ZeroClipboard.Client();
+	clip.setHandCursor( true );
+	clip.addEventListener( 'complete', function(client, text) {
+		alert(" Your alert goes gere : " + text + "\n Content already copied on clipboard !");
+	} );
+}
+
+function move_swf(ee) {    
+	//copything = document.getElementById(ee.id+"_text").value;
+	//alert(document.getElementById(ee.id).getAttributeNode("tocopy").value);
+	copything = document.getElementById(ee.id).getAttributeNode("tocopy").value;
+	clip.setText(copything);
+	if (clip.div) {	  
+		clip.receiveEvent('mouseout', null);
+		clip.reposition(ee.id);
+	}
+		else{ clip.glue(ee.id);
+	}
+	clip.receiveEvent('mouseover', null);
+}    
+</script>
  </head>
  <!--  Head end 3 --> 
  
 <!--  Body -->
-<body id="body-documentation">
+<body id="body-documentation" onload="init();">
 <div id="top-nav"></div>
     
      <!--  Content-->   
