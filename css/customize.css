@@ -26,6 +26,12 @@ body{
 
 }	
 
+#logo{
+    padding-top: 10px;
+    max-width: 200px;
+    padding-bottom: 10px;
+    
+}
 
 .upButton:before{
 
