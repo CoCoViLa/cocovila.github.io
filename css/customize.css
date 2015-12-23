@@ -26,6 +26,11 @@ body{
 
 }	
 
+.logo_placeholder{
+    align-content: center;
+    margin: 5px 0 5px 0;
+}
+
 .upButton:before{
 
 /*content:"\e133";*/
