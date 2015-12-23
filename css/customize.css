@@ -28,7 +28,8 @@ body{
 
 .logo_placeholder{
     align-content: center;
-    margin: 5px 0 5px 0;
+    margin: auto;
+    display: inline-block;
     width: 50%;
 }
 
